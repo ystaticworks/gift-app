@@ -7,7 +7,7 @@ export function MusicBadge() {
     const [isPlaying, setIsPlaying] = useState(false);
 
     useEffect(() => {
-        const audio = new Audio("/audio.mpeg");
+        const audio = new Audio(`${import.meta.env.BASE_URL}audio.mpeg`);
 
         audio.loop = true;
         audio.volume = 0.7;
